@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pemrograman Internet Tugas 2</title>
+    <style>
+        /* Reset beberapa margin dan padding default browser */
+        body, h1, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Menentukan font utama */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Judul */
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* Konten utama */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Gaya untuk tautan */
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        /* Gaya untuk tombol */
+        .btn {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Gaya untuk gambar */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 4%;
+            background-color: rgba(34, 40, 49, 0.8);
+            backdrop-filter: blur(2rem);
+            border-bottom: 1px solid #222831;
+            box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            transition: background-color 0.3s ease-in-out; /* Efek transisi perubahan warna latar belakang navbar */
+        }
+
+        .navbar .navbar-logo {
+            width: 40px;
+            margin-right: 5px;
+        }
+
+        .navbar .navbar-nav {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar .navbar-nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+            margin: 0 1rem;
+            position: relative;
+        }
+
+        .navbar .navbar-nav a::after {
+            content: '';
+            display: block;
+            border: 0;
+            border-radius: 10px;
+            border-bottom: 0.15rem solid transparent;
+            transform: scaleX(0);
+            transition: 0.2s linear;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+        }
+
+        .navbar .navbar-nav a:hover::after {
+            transform: scaleX(1);
+            border-color: var(--primary);
+        }
+
+        .navbar .navbar-extra a {
+            font-size: 20px;
+            color: #ffffff;
+            margin: 0 0.2rem;
+        }
+
+        .navbar .navbar-extra a:hover {
+            color: var(--primary);
+        }
+
+        /* Efek navbar saat digulir */
+        .navbar.scrolled {
+            background-color: rgba(114, 154, 214, 0.9); /* Warna latar belakang navbar saat digulir */
+            box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.12);
+        }
+        footer {
+    bottom: 10;
+    width: 100%;
+    padding: 10px; 
+}/* Elemen di atas footer */
+.content-above-footer {
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    margin-top: 90px;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="./assets/PSTI.png" alt="Logo">
+            </div>
+            <ul class="navbar-nav">
+                <li><a href="https://psti.upi.edu/">Home</a></li>
+                <li><a href="https://github.com/jack23w/Promnet/blob/main/CV.Dzaki%20Syauqi%20Anthera%20Mumtaz_PSTI_UPI%5B1%5D.pdf">About</a></li>
+                <li><a href="#contactperson">Contact</a></li>
+            </ul>
+            <div class="navbar-extra">
+                <a href="#search"><i class="fa fa-search"></i></a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <ul>
+            <li>
+                <strong>Nama: Dzaki Syauqi Anthera Mumtaz</strong>
+            </li>
+            <li>
+                <strong>NIM: 2202942</strong>
+            </li>
+            <li>
+                <strong>KELAS: 3A</strong>
+            </li>
+            <li>
+                <strong>Prodi: PSTI</strong>
+            </li>
+        </ul>
+        <h3> VSC (Version Control System)</h3>
+        <p>
+            Version Control System, atau VCS, adalah sistem yang dapat membantu engineer dan developer untuk melacak modifikasi kode dalam software. Sistem ini menjadi prioritas seluruh tim software development agar para anggota tidak berbenturan dan bertanggung jawab atas setiap perubahan yang mereka lakukan.
+        </p>
+        <h3> Penjelasan GIT</h3>
+        <ul style="font-family: Arial, Helvetica, sans-serif;"></ul>
+        <img src="./assets/GIT(2).jpg" width="200">
+        <p>
+            GIT adalah sebuah tools bagi para programmer dan developer yang berfungsi sebagai control system untuk menjalankan proyek pengembangan software. GIT adalah singkatan dari Group Inclusive Tour. Tujuan penggunaan GIT yakni untuk mengelola versi source code program dengan menentukan baris serta kode yang akan ditambahkan atau diganti. Untuk instalasi GIT anda bisa klik link biru ini
+            <a href="https://git-scm.com/downloads" target="_blank">GIT Install</a>
+        </p>
+        <h3>
+            Penjelasan GITHUB
+        </h3>
+        <p>
+            <img src="./assets/GITHUB.png" width="100">
+        </p>
+        <p>
+            <a href="https://github.com/" target="_blank">GITHUB</a>
+            merupakan layanan cloud yang berguna untuk menyimpan dan mengelola sebuah project yang dinamakan repository (repo git). Cara kerja pada GitHub harus terkoneksi pada internet sehingga tidak perlu meng-install sebuah software ke dalam perangkat keras. Hal ini memberikan keringanan penyimpanan komputer yang kita gunakan karena file project tersimpan oleh cloud GitHub.
+        </p>
+        <p>
+            Konsep kerja GitHub pada dasarnya sama dengan Git yaitu dapat menulis source code secara individu atau tim. User interface yang tersedia pada GitHub lebih menarik dan mudah dipahami oleh pengguna awal. Pekerjaan secara tim, pengguna juga bisa melihat siapa penulis kode dan tanggal berapa kode tersebut dibuat.
+        </p>
+        <p>
+            Terdapat fitur lain pada GitHub yaitu kita dapat membaca berbagai blog dan feed yang dibuat oleh sesama pengguna. Hal ini dimanfaatkan oleh pengguna seluruh dunia untuk saling berbagi ide pemrograman dan berdiskusi dalam menyelesaikan masalah. Tentunya postingan yang ada pada GitHub berkaitan dengan pemrograman. Sehingga Github telah menjadi forum diskusi para programmer seperti halnya media sosial.
+        </p>
+        <h3> Perbedaan GIT dan GITHUB</h3>
+        <p>
+            Lalu apakah GIT dan GITHUB itu sama? Simpelnya perbedaan nya terletak pada GIT berfungsi untuk menyimpan source code di lokal di komputer GITHUB berfungsi sebagai WEB untuk menyimpan dalam internet dan bersifat open source. Kalian juga bisa mentransfer code atau source kalian dari local ke web GITHUB untuk portofolio ataupun untuk collab bersama dengan yang lainnya. Berikut gambaran terminologi dan juga Fungsi GIT dan GITHUB
+        </p>
+        <p>
+            <img src="./assets/Git-dan-Github-2.jpg" width="350" height="200">
+            <img src="./assets/Terminologi.png" width="350" height="200">
+        </p>
+        <h2> Perintah - Perintah di GIT</h2>
+        <ul>
+<head>
+    <title>Penjelasan Perintah Git</title>
+</head>
+<body>
+    <h2>1. git config</h2>
+    <p>
+        <strong>Deskripsi:</strong>git config adalah perintah dalam Git yang digunakan untuk mengatur dan mengelola konfigurasi Git. Konfigurasi ini dapat berupa pengaturan global (untuk seluruh repositori pada sistem), konfigurasi pada level repositori (hanya berlaku untuk repositori tertentu), atau konfigurasi pada level proyek (berlaku untuk proyek tertentu dalam sebuah repositori). 
+    </p>
+    <p><img src="./assets/config.png" width="300"></p>
+
+    <h2>2. git init</h2>
+    <p>
+        <strong>Deskripsi:</strong> Perintah ini digunakan untuk menambahkan file ke indeks (staging area) untuk persiapan pengiriman ke repositori Git.
+    </p>
+    <p><img src="./assets/init.png" width="300"></p>
+
+    <h2>3. git add</h2>
+    <p>
+        <strong>Deskripsi:</strong> git add adalah perintah dalam Git yang digunakan untuk menambahkan perubahan pada berkas ke area staging (indeks). Ketika Anda melakukan perubahan pada berkas dalam repositori Git, perubahan tersebut tidak secara otomatis dimasukkan ke dalam komit.
+    </p>
+    <p><img src="./assets/add.png" width="300"></p>
+
+    <h2>4. git clone</h2>
+    <p>
+        <strong>Deskripsi:</strong> : Perintah ini digunakan untuk mengklon repositori Git yang ada dari URL ke dalam direktori lokal Anda.
+    </p>
+    <p><img src="./assets/clone.png" width="300"></p>
+
+    <h2>5. git commit</h2>
+    <p>
+        <strong>Deskripsi:</strong> Perintah ini digunakan untuk membuat komit dengan file-file yang telah diindeks sebelumnya. Pesan komit digunakan untuk memberikan deskripsi singkat tentang perubahan yang Anda lakukan.
+    </p>
+    <p><img src="./assets/commit.png" width="300"></p>
+
+    <h2>6. git status</h2>
+    <p>
+        <strong>Deskripsi:</strong> Perintah ini digunakan untuk melihat status file-file dalam repositori, termasuk file-file yang telah diubah, ditambahkan, atau dihapus.
+    </p>
+    <p><img src="./assets/status.png" width="300"></p>
+
+    <h2>7. git push</h2>
+    <p>
+        <strong>Deskripsi:</strong> Perintah ini digunakan untuk mengirim perubahan yang Anda buat dalam repositori lokal Anda ke repositori jarak jauh.
+    </p>
+    <p><img src="./assets/Push.png" width="300"></p>
+
+    <h2>8. git checkout</h2>
+    <p>
+        <strong>Deskripsi:</strong> Perintah ini digunakan untuk beralih ke cabang lain dalam repositori.
+    </p>
+    <p><img src="./assets/Checkout.png" width="300"></p>
+
+    <h2>9. git remote</h2>
+    <p>
+        <strong>Deskripsi:</strong> Perintah ini digunakan untuk melihat daftar remote repositories yang terhubung ke repositori lokal Anda.
+    </p>
+    <p><img src="./assets/remote.png" width="300"></p>
+
+    <h2>10. git branch</h2>
+    <p>
+        <strong>Deskripsi:</strong> git branch adalah perintah dalam Git yang digunakan untuk melihat daftar cabang (branch) yang ada dalam repositori Git Anda. Branch adalah percabangan independen dari riwayat perubahan dalam repositori yang memungkinkan Anda untuk bekerja pada fitur, perbaikan bug, atau percobaan lain tanpa memengaruhi riwayat utama repositori.
+    </p>
+    <p><img src="./assets/branch.png" width="300"></p>
+
+    <h2>11. git pull</h2>
+    <p>
+        <strong>Deskripsi:</strong> Perintah ini digunakan untuk mengambil perubahan terbaru dari repositori jarak jauh (remote repository) ke repositori lokal Anda.
+    </p>
+    <p><img src="./assets/Pull.png" width="300"></p>
+    <h2> GITHUB PAGES</h2>
+    <p>
+        <a href="https://pages.github.com/" target="_blank">GITHUB PAGES</a>
+        adalah layanan hosting statis yang disediakan oleh GitHub. Ini memungkinkan Anda untuk membuat situs web atau halaman web statis gratis yang di-hosting langsung dari repositori GitHub Anda. GitHub Pages sangat populer di kalangan pengembang perangkat lunak dan pengguna GitHub untuk mempublikasikan dokumentasi, portofolio, blog, atau situs web pribadi mereka.
+    </p>
+    <footer>
+        <h4 id="contactperson"><center>Contact Person</center></h4>
+        <center><div class="icon-container"></div>
+            <a href="https://github.com/jack23w">
+                <img src="./assets/GITHUB.png" width="80"> 
+            </a>
+            <a href="https://www.linkedin.com/in/dzaki-syauqi-anthera-mumtaz-b048ba244">
+                <img src="./assets/Linkedln.jpg" width="90">
+            </a>
+            <a href="https://instagram.com/jacky_mumtaz?igshid=ZDdkNTZiNTM=">
+                <img src="./assets/Instagram.jpg" width="70"</a>
+        </div>
+        
+    </footer>
+</body>
+
+</html>
+
+    </div>
+    <script>
+        // JavaScript untuk menangani efek navbar saat digulir
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
